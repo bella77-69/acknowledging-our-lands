@@ -1,0 +1,52 @@
+@import '../../styles/main.css';
+
+.footer {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-light);
+  }
+  
+  .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .footer-container p {
+    margin-bottom: 10px;
+  }
+
+  .footer-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-image: url('../../assets/images/everyChild.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 15vh;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+
+  .email-link {
+    color: var(--text-light);
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    color: var(--text-dark);
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .email {
+      text-align: center; 
+    }
+  }
