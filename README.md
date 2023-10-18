@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Acknowledging Our Lands
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="left">
+  <strong>Acknowledging Our Lands</strong> is a web application that helps users learn about and perform land acknowledgments. It provides a simple and educational platform for acknowledging the Indigenous territories and traditional lands on which we live and work.
+</p>
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Acknowledging Our Lands was built using these technologies:
 
-## Expanding the ESLint configuration
+- TypeScript
+- React-Router
+- Bootstrap
+- Axios
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 Installation and Setup Instructions
 
-- Configure the top-level `parserOptions` property like this:
+To get started with Acknowledging Our Lands, follow these steps:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. **Installation**: Run `npm install` to install project dependencies.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Development Mode**: In the project directory, run `npm run dev` to start the app in development mode.
