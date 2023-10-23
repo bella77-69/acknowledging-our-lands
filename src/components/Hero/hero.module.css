@@ -1,6 +1,6 @@
-@import '../../styles/main.css';
+@import '../../styles/global.css';
 
-.hero-section {
+.heroSection {
     position: relative;
     background-image: var(--image-overlay), url('../../assets/images/background-img6.jpg');
     background-size: cover;
@@ -13,7 +13,7 @@
     padding: 2rem 1rem;
 }
 
-.hero-overlay {
+.heroOverlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -26,7 +26,7 @@
     z-index: -1;
 }
 
-.hero-content {
+.heroContent {
     background-color: var(--hero-background);
     padding: 1rem;
     border-radius: 5px;
@@ -34,7 +34,7 @@
     margin: 0 auto;
 }
 
-.hero-content h1 {
+.heroContent h1 {
     margin: 1rem 0;
     font-size: 2rem;
     font-weight: 650;
@@ -42,7 +42,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.2);
 }
 
-.hero-content p {
+.heroContent p {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 2rem;
@@ -50,7 +50,7 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.hero-content button {
+.heroContent button {
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--text-light);
     font-size: 1.25rem;
@@ -60,17 +60,17 @@
     cursor: pointer;
 }
 
-.hero-link {
+.heroLink {
     text-decoration: none;
     color: var(--link-color);
 }
 
-.hero-link:hover {
+.heroLink:hover {
     color: var(--text-light-hover);
     text-decoration: none;
 }
 
-.hero-btn {
+.heroBtn {
     border: none;
     color: var(--text-light);
     padding: 10px 20px;
@@ -81,37 +81,37 @@
     margin-bottom: 1rem;
 }
   
-.hero-btn:hover {
+.heroBtn:hover {
     background-color: var(--button-hover);
     color: var(--text-dark);
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .hero-content p {
+    .heroContent p {
         font-size: 1rem;
     }
 
-    .hero-content button {
+    .heroContent button {
         font-size: 1rem;
         padding: 8px 16px;
     }
 }
 
 @media (min-width: 768px) {
-    .hero-content {
+    .heroContent {
         max-width: initial;
     }
 }
 
 @media (min-width: 992px) {
-    .hero-section {
+    .heroSection {
         height: 100vh;
     }
-    .hero-content {
+    .heroContent {
         max-width: 80%;
     }
-    .hero-content h1 {
+    .heroContent h1 {
         font-size: 2.5rem;
     }
 }

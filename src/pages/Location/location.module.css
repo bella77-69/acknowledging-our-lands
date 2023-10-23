@@ -1,4 +1,4 @@
-@import '../../styles/main.css';
+@import '../../styles/global.css';
 
 .land {
     position: relative;
@@ -20,13 +20,13 @@
     font-family: var(--font-family);
 }
 
-.location-heading {
+.locationHeading {
     font-size: 16px;
     margin-bottom: 20px;
     color: var(--text-dark);
 }
 
-.location-info p {
+.locationInfo p {
     margin-bottom: 15px;
     color: var(--text-dark);
     font-size: 16px;
@@ -44,19 +44,19 @@
     width: 100%;
 }
 
-.location-title {
+.locationTitle {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-dark);
 }
 
-.location-info {
+.locationInfo {
     font-size: 16px;
     margin-bottom: 20px;
     color: #555;
 }
 
-.land-acknowledgment-container {
+.landAcknowledgmentContainer {
     margin-top: 20px;
 }
 
@@ -68,15 +68,15 @@
 }
 
 @media (min-width: 1024px) {
-    .location-heading {
+    .locationHeading {
         font-size: 18px;
     }
 
-    .location-title {
+    .locationTitle {
         font-size: 20px;
     }
 
-    .location-info p {
+    .locationInfo p {
         font-size: 18px;
     }
 }

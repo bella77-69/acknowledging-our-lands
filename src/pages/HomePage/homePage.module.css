@@ -1,6 +1,6 @@
-@import '../../styles/main.css';
+@import '../../styles/global.css';
 
-.home-container {
+.homeContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,11 +9,11 @@
     background-color: var(--home-background-color)
   }
   
-  .home-container p {
+  .homeContainer p {
     font-size: 18px;
   }
   
-  .container-box {
+  .containerBox {
     max-width: 900px;
     padding: 20px;
     flex-direction: column;
@@ -26,7 +26,7 @@
   }
   
 
-  .container-box.row .content {
+  .containerBox .row .content {
     flex: 1;
     padding: 20px;
   }
@@ -35,13 +35,13 @@
     padding: 10px;
   }
   
-  .button-container {
+  .buttonContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .get-acknowledgment-button {
+  .getAcknowledgmentButton {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -55,12 +55,12 @@
     transition: background-color 0.3s;
   }
   
-  .get-acknowledgment-button:hover {
+  .getAcknowledgmentButton:hover {
     background-color: var(--button-hover);
     color: var(--text-dark);
   }
   
-  .image-container {
+  .imageContainer {
     display: flex;
     justify-content: center;
     background-image: url('../../assets/images/turtle.png');
@@ -71,34 +71,34 @@
     height: 15vh;
   }
   
-  .image-container img {
+  .imageContainer img {
     max-width: 100%;
   }
   
   /* Media query for responsive design */
   @media (max-width: 768px) {
-    .home-container {
+    .homeContainer {
       padding: 20px 10px;
     }
   
-    .home-container p {
+    .homeContainer p {
       font-size: 16px;
     }
   }
   
   @media (min-width: 768px) {
-    .container-box {
+    .containerBox {
       margin: 0 20px 0;
       padding: 0 20px 0;
       flex-direction: row;
     }
-    .container-box.column .content {
+    .containerBox .column .content {
         padding: 20px;
       }
   }
 
   @media (min-width: 1024px) {
-    .container-box {
+    .containerBox {
         padding: 0 40px 0;
     }
   }

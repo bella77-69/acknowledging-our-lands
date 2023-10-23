@@ -1,4 +1,4 @@
-@import '../../styles/main.css';
+@import '../../styles/global.css';
 
 .footer {
     margin: 0;
@@ -7,18 +7,18 @@
     color: var(--text-light);
   }
   
-  .footer-container {
+  .footerContainer {
     max-width: 800px;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
   }
   
-  .footer-container p {
+  .footerContainer p {
     margin-bottom: 10px;
   }
 
-  .footer-image {
+  .footerImage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,12 +35,12 @@
     font-size: 1rem;
   }
 
-  .email-link {
+  .emailLink {
     color: var(--text-light);
     text-decoration: none;
   }
   
-  .email-link:hover {
+  .emailLink:hover {
     color: var(--text-dark);
     text-decoration: none;
   }

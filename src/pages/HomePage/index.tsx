@@ -1,5 +1,5 @@
 import Hero from "../../components/Hero";
-import "./HomePage.css";
+import styles from "./HomePage.module.css";
 
 type HomePageProps = {};
 
@@ -11,11 +11,11 @@ function HomePage( {} : HomePageProps) {
   };
 
   return (
-    <div className="home">
+    <div className={styles.home}>
       <Hero />
-      <div className="home-container">
-        <div className="container-box row">
-          <div className="content">
+      <div className={styles.homeContainer}>
+        <div className={`${styles.containerBox} ${styles.row}`}>
+          <div className={styles.content}>
             <p>
               Territory acknowledgment is crucial to respecting Indigenous
               presence and land rights, highlighting the ongoing impacts of
@@ -24,7 +24,7 @@ function HomePage( {} : HomePageProps) {
               Indigenous history and culture.
             </p>
           </div>
-          <div className="content">
+          <div className={styles.content}>
             <p>
               However, we understand the significance of going beyond mere token
               gestures. Our app emphasizes meaningful actions, urging settlers
@@ -34,11 +34,11 @@ function HomePage( {} : HomePageProps) {
             </p>
           </div>
         </div>
-        <div className="image-container">
+        <div className={styles.imageContainer}>
       
         </div>
-        <div className="container-box column">
-          <div className="content">
+        <div className={`${styles.containerBox} ${styles.column}`}>
+          <div className={styles.content}>
             <p>
               With "Acknowledging Our Lands," we aim to promote understanding
               and empathy. By helping you identify your location and providing
@@ -48,7 +48,7 @@ function HomePage( {} : HomePageProps) {
               respectful territory acknowledgments.
             </p>
           </div>
-          <div className="content button-container">
+          <div className={`${styles.content} ${styles.buttonContainer}`}>
             
             <p>
               Let's take a step forward in supporting reconciliation efforts and
@@ -59,7 +59,7 @@ function HomePage( {} : HomePageProps) {
             </p>
             <button
               onClick={(e) => btnClick(e)}
-              className="get-acknowledgment-button"
+              className={styles.getAcknowledgmentButton}
             >
               Get Your Land Acknowledgment
             </button>

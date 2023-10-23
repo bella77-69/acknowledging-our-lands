@@ -1,19 +1,19 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-image"></div>
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerImage}></div>
         <p>
           &copy; {new Date().getFullYear()} Acknowledging Our Lands. All rights
           reserved.
         </p>
-        <p className="email">
+        <p className={styles.email}>
           If you have any questions or feedback, please email us at:
           <br />
           <a
-            className="email-link"
+            className={styles.emailLink}
             href="mailto:acknowledgingourlands@gmail.com"
           >
             acknowledgingourlands@gmail.com

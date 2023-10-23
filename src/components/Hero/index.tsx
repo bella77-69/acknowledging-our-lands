@@ -1,4 +1,4 @@
-import "./hero.css";
+import styles from './hero.module.css';
 
 interface HeroProps {}
 
@@ -9,9 +9,9 @@ const Hero: React.FC<HeroProps> = () => {
     };
     
   return (
-    <div className="hero-section">
-      <div className="hero-overlay"></div>
-      <div className="hero-content">
+    <div className={styles.heroSection}>
+      <div className={styles.heroOverlay}></div>
+      <div className={styles.heroContent}>
         <h1>Welcome to Acknowledging Our Lands</h1>
         <p>
           <strong>Acknowledging Our Lands!</strong> This app will help you
@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = () => {
           project has been able to accurately map and acknowledge the Indigenous
           territories and traditional lands. Visit their website at{" "}
           <a
-            className="hero-link"
+            className={styles.heroLink}
             href="https://native-land.ca/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = () => {
           </a>{" "}
           to learn more about their important work.
         </p>
-        <button onClick={btnClick} className="hero-btn">
+        <button onClick={btnClick} className={styles.heroBtn}>
           Get Started
         </button>
       </div>

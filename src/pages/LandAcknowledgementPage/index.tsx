@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./landAcknowledgement.css";
+import styles from "./landAcknowledgement.module.css";
 
 interface LandAcknowledgmentProps {
   indigenousLands: any[];
@@ -34,13 +34,13 @@ const LandAcknowledgment: React.FC<LandAcknowledgmentProps> = ({
   };
 
   return (
-    <div className="land-acknowledgment">
-      <h2 className="location-title">Land Acknowledgment</h2>
-      <div className="content">
+    <div className={styles.landAcknowledgment}>
+      <h2 className={styles.locationTitle}>Land Acknowledgment</h2>
+      <div className={styles.content}>
         {indigenousLands.length > 0 ? (
-          <p className="land-paragraph">
+          <p className={styles.landParagraph}>
             {indigenousLandVariations[currentAcknowledgmentIndex]}
-            <span className="indigenous-names">
+            <span className={styles.indigenousNames}>
               {indigenousLands.map((land, index) => (
                 <React.Fragment key={land.properties.Name}>
                   {index > 0 && ", "}
@@ -54,11 +54,11 @@ const LandAcknowledgment: React.FC<LandAcknowledgmentProps> = ({
           <p>Loading Indigenous Lands information...</p>
         )}
       </div>
-      <div className="cta">
-        <button onClick={changeAcknowledgment} className="cta-button">
+      <div className={styles.cta}>
+        <button onClick={changeAcknowledgment} className={styles.ctaButton}>
           Change Acknowledgment
         </button>
-        <button onClick={(e) => btnLearn(e)} className="cta-button">
+        <button onClick={(e) => btnLearn(e)} className={styles.ctaButton}>
           Learn More
         </button>
       </div>

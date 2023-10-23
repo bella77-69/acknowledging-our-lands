@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./location.css";
+import styles from "./location.module.css";
 import LandAcknowledgement from "../LandAcknowledgementPage";
 import apiKey from "../../config";
 
@@ -62,20 +62,20 @@ const Location: React.FC = () => {
   }, []);
 
   return (
-    <section className="land">
-      <div className="location">
+    <section className={styles.land}>
+      <div className={styles.location}>
         {latitude && longitude ? (
-          <div className="content">
-            <p className="location-heading">
+          <div className={styles.content}>
+            <p className={styles.locationHeading}>
               This page detects your current location and displays the
               coordinates. Additionally, the land acknowledgment section below
               helps you identify the traditional lands you are on, fostering
               awareness and respect.
             </p>
 
-            <div className="box">
-              <h2 className="location-title">Your Current Location:</h2>
-              <div className="location-info">
+            <div className={styles.box}>
+              <h2 className={styles.locationTitle}>Your Current Location:</h2>
+              <div className={styles.locationInfo}>
                 <p>
                   <strong>Latitude:</strong> {latitude}
                 </p>
@@ -86,13 +86,13 @@ const Location: React.FC = () => {
                   <strong>City:</strong> {city}
                 </p>
               </div>
-              <div className="land-acknowledgment-container">
+              <div className={styles.landAcknowledgmentContainer}>
                 <LandAcknowledgement indigenousLands={indigenousLands} />
               </div>
             </div>
           </div>
         ) : error ? (
-          <p className="alert alert-danger">Error: {error}</p>
+          <p className={`${styles.alert} ${styles.alertDanger}`}>Error: {error}</p>
         ) : (
           <p>Loading location...</p>
         )}
