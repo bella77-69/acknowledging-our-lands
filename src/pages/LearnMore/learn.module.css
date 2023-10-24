@@ -1,0 +1,138 @@
+@import '../../styles/global.css';
+
+.learn {
+  background-image: var(--image-overlay), url('../../assets/images/background-img2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 45px 16px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.learnQuestion {
+  /* max-width: 275px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  text-align: center;
+  background-color: var(--home-background-transparent);
+  padding: 20px;
+  border-radius: 5px; */
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  justify-items: stretch;
+  max-width: 275px;
+  margin: 0 auto;
+  background-color: var(--home-background-transparent);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.pageTitle {
+  /* font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-dark); */
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 650;
+  color: var(--text-dark);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.2);
+}
+
+.learnMore {
+  background-color: var(--home-background-transparent);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+
+}
+
+.learnMore h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.learnMore p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+  color: var(--text-dark);
+}
+
+.learnMore.active p {
+  display: block;
+}
+
+.learnLinks {
+  background-color: var(--home-background);
+  padding: 15px 20px; 
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.learnLinks a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 17px;
+  font-weight: 600;
+  display: block; 
+  padding: 10px 0; 
+}
+
+.learnLinks a:hover {
+  color: var(--link-color);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .learnMore {
+    padding: 15px;
+  }
+
+  .learnMore h3 {
+    font-size: 17px;
+  }
+
+  .learnLinks {
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .learnQuestion {
+    max-width: 500px;
+  }
+
+  .learnLinks a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .learnMore p {
+    font-size: 17px;
+  }
+  .learnLinks a {
+    font-size: 19px;
+  }
+  .pageTitle {
+    font-size: 22px;
+  }
+  .learnQuestion {
+    max-width: 700px;
+  }
+}

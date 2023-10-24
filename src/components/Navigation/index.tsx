@@ -9,7 +9,7 @@ const Navigation = () => {
           <img src={logo} alt="logo" className={styles.navbarLogo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={styles.basicNavbarNav} />
-        <Navbar.Collapse id="basic-navbar-nav" className={styles.customNavbarCollapse}>
+        <Navbar.Collapse id={styles.basicNavbarNav} className={styles.customNavbarCollapse}>
           <Nav className={`${styles.mlAuto} ${styles.CustomNav}`}>
             <Nav.Link className={styles.navLink} href="/">
               Home
@@ -22,6 +22,9 @@ const Navigation = () => {
             </Nav.Link>
             <Nav.Link className={styles.navLink} href="/learn-more">
               Learn More
+            </Nav.Link>
+            <Nav.Link className={styles.navLink} href="/contact">
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

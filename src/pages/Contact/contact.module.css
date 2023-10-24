@@ -1,0 +1,72 @@
+@import '../../styles/global.css';
+
+.contact {
+  background-image: var(--image-overlay), url('../../assets/images/background-img2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 45px 16px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactContainer {
+  padding: 80px 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--home-background-transparent);
+  min-height: auto;
+  max-width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+h1 {
+  margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 650;
+    color: var(--text-dark);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.2);
+
+}
+
+p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contactInfo h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.contactInfo p {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.contactInfo a {
+  color: var(--text-dark);
+  text-decoration: none;
+  cursor: pointer;
+}

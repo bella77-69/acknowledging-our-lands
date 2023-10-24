@@ -92,7 +92,9 @@ const Location: React.FC = () => {
             </div>
           </div>
         ) : error ? (
-          <p className={`${styles.alert} ${styles.alertDanger}`}>Error: {error}</p>
+          <p className={`${styles.alert} ${styles.alertDanger}`}>
+            Error: {error}
+          </p>
         ) : (
           <p>Loading location...</p>
         )}

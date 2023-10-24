@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import Location from "./pages/Location";
 import Search from "./pages/Search";
+import LearnMore from "./pages/LearnMore";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
             <Route path="/" exact component={HomePage} />
             <Route path="/land-acknowledgement" exact component={Location} />
             <Route path="/search" exact component={Search} />
+            <Route path="/learn-more" exact component={LearnMore} />
+            {/* <Route path="/contact" exact component={Contact} /> */}
           </Switch>
+          <Contact name='John' />
           <Footer />
         </>
       </Router>

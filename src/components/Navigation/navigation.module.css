@@ -10,6 +10,10 @@
     padding: 20px 30px !important;
 }
 
+#basicNavbarNav {
+    text-align: center;
+}
+
 .customNavbarCSollapse {
     display: flex;
     align-items: center;
@@ -49,5 +53,8 @@
 @media (min-width: 768px) {
     .navbarNav {
         margin-left: 16px;
+    }
+    #basicNavbarNav {
+        text-align: right;
     }
 }
