@@ -12,30 +12,25 @@
 }
 
 .learnQuestion {
-  /* max-width: 275px;
-  margin: 0 auto;
-  padding: 120px 20px;
-  text-align: center;
-  background-color: var(--home-background-transparent);
-  padding: 20px;
-  border-radius: 5px; */
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  justify-items: stretch;
   max-width: 275px;
   margin: 0 auto;
+  padding: 120px 20px;
+  /* text-align: center; */
   background-color: var(--home-background-transparent);
   padding: 20px;
   border-radius: 5px;
+  /* display: grid;
+  place-items: center;
+  justify-content: center;
+  justify-items: stretch; */
+
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .pageTitle {
-  /* font-size: 20px;
+  font-size: 20px;
   margin-bottom: 15px;
-  color: var(--text-dark); */
-  margin: 1rem 0;
-  font-size: 2rem;
   font-weight: 650;
   color: var(--text-dark);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.2);
@@ -130,7 +125,8 @@
     font-size: 19px;
   }
   .pageTitle {
-    font-size: 22px;
+    margin: 1rem 0;
+    font-size: 2rem;
   }
   .learnQuestion {
     max-width: 700px;

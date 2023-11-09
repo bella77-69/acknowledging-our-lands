@@ -4,10 +4,10 @@
     border-radius: 5px;
 }
 
-.locationTSitle {
+.locationTitle {
     font-size: 24px;
     margin-bottom: 10px;
-    text-shadow: var(--text-shadow);
+    color: var(--text-dark);
 }
 
 .landParagraph {
@@ -24,7 +24,8 @@
 .cta {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .ctaButton {
@@ -36,9 +37,13 @@
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
     margin-bottom: 1rem;
+    width: 35%;
 }
 
 .ctaButton:hover {
     background-color: var(--button-hover);
+    color: var(--text-dark)
 }

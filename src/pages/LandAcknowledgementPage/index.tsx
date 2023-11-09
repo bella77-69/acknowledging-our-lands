@@ -35,7 +35,7 @@ const LandAcknowledgment: React.FC<LandAcknowledgmentProps> = ({
 
   return (
     <div className={styles.landAcknowledgment}>
-      <h2 className={styles.locationTitle}>Land Acknowledgment</h2>
+      <h2 className={styles.locationTitle}>Your Land Acknowledgment based on your current location</h2>
       <div className={styles.content}>
         {indigenousLands.length > 0 ? (
           <p className={styles.landParagraph}>

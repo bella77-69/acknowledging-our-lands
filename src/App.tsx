@@ -19,9 +19,8 @@ function App() {
             <Route path="/land-acknowledgement" exact component={Location} />
             <Route path="/search" exact component={Search} />
             <Route path="/learn-more" exact component={LearnMore} />
-            {/* <Route path="/contact" exact component={Contact} /> */}
+            <Route path="/contact" exact component={Contact} />
           </Switch>
-          <Contact name='John' />
           <Footer />
         </>
       </Router>

@@ -2,7 +2,7 @@
 
 .heroSection {
     position: relative;
-    background-image: var(--image-overlay), url('../../assets/images/background-img6.jpg');
+    background-image: var(--image-overlay), url('../../assets/images/background-img3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +50,7 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.heroContent button {
+/* .heroContent button {
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--text-light);
     font-size: 1.25rem;
@@ -58,7 +58,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 .heroLink {
     text-decoration: none;
@@ -71,7 +71,9 @@
 }
 
 .heroBtn {
+    background-color: rgba(255, 255, 255, 0.2);
     border: none;
+    font-size: 1.25rem;
     color: var(--text-light);
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,6 +81,7 @@
     font-weight: 700;
     transition: background-color 0.3s;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
   
 .heroBtn:hover {
@@ -99,8 +102,9 @@
 }
 
 @media (min-width: 768px) {
+    
     .heroContent {
-        max-width: initial;
+        max-width: 85%;
     }
 }
 
@@ -108,11 +112,15 @@
     .heroSection {
         height: 100vh;
     }
-    .heroContent {
-        max-width: 80%;
-    }
+
     .heroContent h1 {
         font-size: 2.5rem;
     }
 }
+
+@media (min-width: 1200px) {
+    .heroContent {
+        max-width: 80%;
+    }
+    }
 

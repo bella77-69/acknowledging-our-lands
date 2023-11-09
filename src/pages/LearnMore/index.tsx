@@ -40,6 +40,8 @@ function LearnMore() {
         {""}
         <h1 className={styles.pageTitle}>Frequently Asked Questions</h1>
         {questionsElements}
+        </div>
+        <div className={styles.learnQuestion}>
         <h2 className={styles.pageTitle}>More ways you can Learn</h2>
         <div className={styles.learnLinks}>
           <a
@@ -61,7 +63,7 @@ function LearnMore() {
         </div>
         <p>If you have more questions or if you find any inaccuracies, please feel free to <a href="mailto:acknowledgingourlands@gmail.com">email us</a>.</p>
       </div>
-    </div>
+      </div>
   );
 }
 
