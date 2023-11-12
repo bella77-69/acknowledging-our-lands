@@ -1,13 +1,13 @@
-import styles from './hero.module.css';
+import styles from "./hero.module.css";
 
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
-    const btnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault();
-      window.location.href = '/land-acknowledgement';
-    };
-    
+  const btnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    window.location.href = "/land-acknowledgement";
+  };
+
   return (
     <div className={styles.heroSection}>
       <div className={styles.heroOverlay}></div>
@@ -32,12 +32,19 @@ const Hero: React.FC<HeroProps> = () => {
           </a>{" "}
           to learn more about their important work.
         </p>
+        {/* <button
+          type="text"
+          onClick={(e: React.MouseEvent<HTMLButtonElement>) => btnClick(e)}
+          className={styles.heroBtn}
+        >
+          Get Started
+        </button> */}
         <button onClick={btnClick} className={styles.heroBtn}>
           Get Started
         </button>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

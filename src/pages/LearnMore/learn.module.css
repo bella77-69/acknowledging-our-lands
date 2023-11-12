@@ -15,15 +15,9 @@
   max-width: 275px;
   margin: 0 auto;
   padding: 120px 20px;
-  /* text-align: center; */
   background-color: var(--home-background-transparent);
   padding: 20px;
   border-radius: 5px;
-  /* display: grid;
-  place-items: center;
-  justify-content: center;
-  justify-items: stretch; */
-
   margin: 0 auto;
   margin-top: 1rem;
 }
@@ -86,11 +80,6 @@
   display: block; 
   padding: 10px 0; 
 }
-
-.learnLinks a:hover {
-  color: var(--link-color);
-}
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {

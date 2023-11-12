@@ -17,7 +17,6 @@
     max-width: 900px;
     padding: 20px;
     flex-direction: column;
-  
   }
   
   .content {
@@ -25,7 +24,6 @@
     font-weight: 500;
   }
   
-
   .containerBox .row .content {
     flex: 1;
     padding: 20px;
@@ -42,16 +40,15 @@
   }
   
   .getAcknowledgmentButton {
-    margin-top: 20px;
-    padding: 10px 20px;
+    /* margin-top: 20px; */
+    /* padding: 10px 20px; */
     font-size: 16px;
     background-color: var(--background-color);
-    
     color: var(--text-dark);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 650;
     transition: background-color 0.3s;
   }
   

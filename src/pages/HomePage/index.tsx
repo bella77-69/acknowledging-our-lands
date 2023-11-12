@@ -1,10 +1,10 @@
 import Hero from "../../components/Hero";
 import styles from "./HomePage.module.css";
+import { Button } from 'antd';
 
 type HomePageProps = {};
 
-function HomePage( {} : HomePageProps) {
-
+function HomePage({}: HomePageProps) {
   const btnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     window.location.href = "/land-acknowledgement";
@@ -34,9 +34,7 @@ function HomePage( {} : HomePageProps) {
             </p>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-      
-        </div>
+        <div className={styles.imageContainer}></div>
         <div className={`${styles.containerBox} ${styles.column}`}>
           <div className={styles.content}>
             <p>
@@ -49,7 +47,6 @@ function HomePage( {} : HomePageProps) {
             </p>
           </div>
           <div className={`${styles.content} ${styles.buttonContainer}`}>
-            
             <p>
               Let's take a step forward in supporting reconciliation efforts and
               working towards a society that acknowledges and honors Indigenous
@@ -57,12 +54,34 @@ function HomePage( {} : HomePageProps) {
               making a positive impact through meaningful territory
               acknowledgments.
             </p>
-            <button
+            {/* <Button
               onClick={(e) => btnClick(e)}
+              sx={{
+                background: "#8cb89f",
+                borderRadius: 5,
+                color: "#1f2b24",
+                fontSize: 16,
+                padding: "10px 30px",
+                margin: "0 10px",
+                border: "none",
+                cursor: "pointer",
+                "&:hover": {
+                  background: "#eeeeee",
+                  color: "#1f2b24",
+                },
+              }}
+              className={styles.getAcknowledgmentButton}
+            >
+              {" "}
+              Get Your Land Acknowledgment
+            </Button> */}
+            <Button type='text'
+               onClick={(e: React.MouseEvent<HTMLButtonElement>) => btnClick(e)}
               className={styles.getAcknowledgmentButton}
             >
               Get Your Land Acknowledgment
-            </button>
+            </Button>
+             {/* <Button type="primary" >Button</Button> */}
           </div>
         </div>
       </div>

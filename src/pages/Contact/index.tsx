@@ -1,8 +1,9 @@
 import styles from './contact.module.css';
+import { Card } from '@mui/material';
 
 function Contact() {
   return (
-    <div className={styles.contact}>
+    <Card className={styles.contact}>
       <div className={styles.contactContainer}>
       <h1>Contact Us</h1>
       <p>If you have any questions or feedback, please feel free to reach out to us:</p>
@@ -15,7 +16,7 @@ function Contact() {
   
       </div>
       </div>
-    </div>
+    </Card>
   );
 }
 

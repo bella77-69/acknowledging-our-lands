@@ -15,7 +15,7 @@
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
-    background-color: var(--home-background);
+    background-color: var(--home-background-transparent);
     min-height: 100vh;
     border-radius: 5px;
     display: flex;

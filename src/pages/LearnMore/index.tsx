@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@mui/material";
 import styles from "./learn.module.css";
 
 function LearnMore() {
@@ -35,35 +36,46 @@ function LearnMore() {
     );
   });
   return (
-    <div className={styles.learn}>
+    <div className={`${styles.learn} your-custom-class`}>
       <div className={styles.learnQuestion}>
         {""}
-        <h1 className={styles.pageTitle}>Frequently Asked Questions</h1>
+        <h1 className={styles.pageTitle}>Frequently Asked Questions </h1>
         {questionsElements}
-        </div>
-        <div className={styles.learnQuestion}>
+      </div>
+      <div className={styles.learnQuestion}>
         <h2 className={styles.pageTitle}>More ways you can Learn</h2>
         <div className={styles.learnLinks}>
-          <a
+          <Link
             href="https://ehprnh2mwo3.exactdn.com/wp-content/uploads/2021/01/Calls_to_Action_English2.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             Truth and Reconciliation Commission's Calls to Action
-          </a>
+          </Link>
         </div>
         <div className={styles.learnLinks}>
-          <a
+          <Link
             href="https://www.justice.gc.ca/eng/declaration/un_declaration_EN1.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             United Nations Declaration on the Rights of Indigenous Peoples
-          </a>
+          </Link>
         </div>
-        <p>If you have more questions or if you find any inaccuracies, please feel free to <a href="mailto:acknowledgingourlands@gmail.com">email us</a>.</p>
+        <p>
+          If you have more questions or if you find any inaccuracies, please
+          feel free to{" "}
+          <a
+            href="mailto:acknowledgingourlands@gmail.com"
+            style={{ color: "blue", textDecoration: "underline" }}
+          >
+            email us
+          </a>
+          . <br /> We appreciate your feedback and will get back to you as soon
+          as possible.
+        </p>
       </div>
-      </div>
+    </div>
   );
 }
 
