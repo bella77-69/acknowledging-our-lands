@@ -66,7 +66,7 @@
     border: none;
     font-size: 16px;
     color: var(--text-dark);
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -89,7 +89,6 @@
 }
 
 @media (min-width: 768px) {
-    
     .heroContent {
         max-width: 90%;
     }
@@ -112,6 +111,9 @@
 @media (min-width: 1200px) {
     .heroContent {
         max-width: 80%;
+    }
+    .heroBtn {
+        font-size: 18px;
     }
     }
 

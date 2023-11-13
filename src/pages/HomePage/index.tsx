@@ -1,13 +1,20 @@
+import React, { useState } from "react";
 import Hero from "../../components/Hero";
 import styles from "./HomePage.module.css";
-import { Button } from 'antd';
+import { Button } from "antd";
 
 type HomePageProps = {};
 
 function HomePage({}: HomePageProps) {
+  const [isButtonClicked, setIsButtonClicked] = useState<boolean>(false);
+
   const btnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    window.location.href = "/land-acknowledgement";
+    setIsButtonClicked(true);
+
+    setTimeout(() => {
+      window.location.href = "/land-acknowledgement";
+    }, 1000);
   };
 
   return (
@@ -54,34 +61,23 @@ function HomePage({}: HomePageProps) {
               making a positive impact through meaningful territory
               acknowledgments.
             </p>
-            {/* <Button
-              onClick={(e) => btnClick(e)}
-              sx={{
-                background: "#8cb89f",
-                borderRadius: 5,
-                color: "#1f2b24",
-                fontSize: 16,
-                padding: "10px 30px",
-                margin: "0 10px",
-                border: "none",
-                cursor: "pointer",
-                "&:hover": {
-                  background: "#eeeeee",
-                  color: "#1f2b24",
-                },
-              }}
-              className={styles.getAcknowledgmentButton}
+
+            <Button
+              type="text"
+              className={`${styles.getAcknowledgmentButton} ${styles.buttonSpin}`}
+              disabled={isButtonClicked}
+              loading={isButtonClicked}
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => btnClick(e)}
             >
-              {" "}
-              Get Your Land Acknowledgment
-            </Button> */}
-            <Button type='text'
-               onClick={(e: React.MouseEvent<HTMLButtonElement>) => btnClick(e)}
-              className={styles.getAcknowledgmentButton}
-            >
-              Get Your Land Acknowledgment
+              {isButtonClicked ? (
+                <span
+                  className={`${styles.spinDot} ${styles.spinner}`}
+                  role="status"
+                ></span>
+              ) : (
+                "Get Your Land Acknowledgment"
+              )}
             </Button>
-             {/* <Button type="primary" >Button</Button> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,29 @@
+import { useState, useEffect } from "react";
 import styles from "./footer.module.css";
 
 function Footer() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setShowBackToTop(scrollY > 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
@@ -21,6 +44,12 @@ function Footer() {
         </p>
         <p>Made with ❤️ by Chantelle</p>
       </div>
+
+      {showBackToTop && (
+        <button className={styles.backToTopButton} onClick={scrollToTop}>
+          &#8593;
+        </button>
+      )}
     </footer>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./landAcknowledgement.module.css";
+import { Button } from "antd";
 
 interface LandAcknowledgmentProps {
   indigenousLands: any[];
@@ -55,12 +56,12 @@ const LandAcknowledgment: React.FC<LandAcknowledgmentProps> = ({
         )}
       </div>
       <div className={styles.cta}>
-        <button onClick={changeAcknowledgment} className={styles.ctaButton}>
+        <Button onClick={changeAcknowledgment} className={styles.ctaButton}>
           Change Acknowledgment
-        </button>
-        <button onClick={(e) => btnLearn(e)} className={styles.ctaButton}>
+        </Button>
+        <Button onClick={(e) => btnLearn(e)} className={styles.ctaButton}>
           Learn More
-        </button>
+        </Button>
       </div>
     </div>
   );

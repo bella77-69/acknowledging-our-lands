@@ -32,7 +32,7 @@
     background-color: var(--background-color);
     border: none;
     color: var(--text-light);
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -40,10 +40,20 @@
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 1rem;
-    width: 35%;
+    /* width: 35%; */
+}
+
+.ctaButton:active {
+    background-color: var(--background-color);
+    color: var(--text-light);
+}
+
+.ctaButton:disabled {
+    background-color: var(--background-color) !important;
+    color: var(--text-light) !important;
 }
 
 .ctaButton:hover {
-    background-color: var(--button-hover);
-    color: var(--text-dark)
+    background-color: var(--button-hover)!important;
+    color: var(--text-dark) !important;
 }

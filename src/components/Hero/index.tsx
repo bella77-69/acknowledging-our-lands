@@ -1,4 +1,5 @@
 import styles from "./hero.module.css";
+import { Button } from 'antd';
 
 interface HeroProps {}
 
@@ -39,9 +40,9 @@ const Hero: React.FC<HeroProps> = () => {
         >
           Get Started
         </button> */}
-        <button onClick={btnClick} className={styles.heroBtn}>
+        <Button type='text'onClick={(e: React.MouseEvent<HTMLButtonElement>) => btnClick(e)} className={styles.heroBtn}>
           Get Started
-        </button>
+        </Button>
       </div>
     </div>
   );

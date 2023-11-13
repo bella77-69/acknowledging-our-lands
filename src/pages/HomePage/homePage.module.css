@@ -1,101 +1,112 @@
 @import '../../styles/global.css';
 
 .homeContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--home-background-color)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--home-background-color)
+}
+
+.homeContainer p {
+  font-size: 18px;
+}
+
+.containerBox {
+  max-width: 900px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.content {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.containerBox .row .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.container-box.column .content {
+  padding: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getAcknowledgmentButton {
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 650;
+  transition: background-color 0.3s;
+}
+
+.getAcknowledgmentButton:hover {
+  background-color: var(--button-hover);
+  color: var(--text-dark);
+}
+
+.getAcknowledgmentButton:disabled {
+  background-color: transparent;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/images/turtle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 15vh;
+}
+
+.imageContainer img {
+  max-width: 100%;
+}
+
+.spinDot {
+  color: var(--text-dark);
+  font-size: 30px;
+  background: transparent;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 20px 10px;
   }
-  
+
   .homeContainer p {
-    font-size: 18px;
-  }
-  
-  .containerBox {
-    max-width: 900px;
-    padding: 20px;
-    flex-direction: column;
-  }
-  
-  .content {
-    color: var(--text-dark);
-    font-weight: 500;
-  }
-  
-  .containerBox .row .content {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .container-box.column .content {
-    padding: 10px;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .getAcknowledgmentButton {
-    /* margin-top: 20px; */
-    /* padding: 10px 20px; */
     font-size: 16px;
-    background-color: var(--background-color);
-    color: var(--text-dark);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 650;
-    transition: background-color 0.3s;
   }
-  
-  .getAcknowledgmentButton:hover {
-    background-color: var(--button-hover);
-    color: var(--text-dark);
-  }
-  
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    background-image: url('../../assets/images/turtle.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 15vh;
-  }
-  
-  .imageContainer img {
-    max-width: 100%;
-  }
-  
-  /* Media query for responsive design */
-  @media (max-width: 768px) {
-    .homeContainer {
-      padding: 20px 10px;
-    }
-  
-    .homeContainer p {
-      font-size: 16px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .containerBox {
-      margin: 0 20px 0;
-      padding: 0 20px 0;
-      flex-direction: row;
-    }
-    .containerBox .column .content {
-        padding: 20px;
-      }
+}
+
+@media (min-width: 768px) {
+  .containerBox {
+    margin: 0 20px 0;
+    padding: 0 20px 0;
+    flex-direction: row;
   }
 
-  @media (min-width: 1024px) {
-    .containerBox {
-        padding: 0 40px 0;
-    }
+  .containerBox .column .content {
+    padding: 20px;
   }
+}
+
+@media (min-width: 1024px) {
+  .containerBox {
+    padding: 0 40px 0;
+  }
+}
